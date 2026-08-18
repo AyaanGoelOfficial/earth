@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050506" />
+    <meta name="description" content="Earth, held in glass and always in motion." />
+    <title>Earth — Always Moving</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#portrait">Skip to portrait</a>
+
+    <div class="stage" aria-hidden="true">
+      <canvas id="earth-canvas"></canvas>
+      <div class="ambient-light"></div>
+    </div>
+
+    <div class="loader" id="loading" role="status" aria-live="polite">
+      <div class="loader-mark"><span></span><i></i></div>
+      <p>Finding Earth</p>
+    </div>
+
+    <header class="site-header">
+      <a class="wordmark" href="#portrait" aria-label="Earth home">
+        <span class="wordmark-orbit" aria-hidden="true"><i></i></span>
+        <span>Earth</span>
+      </a>
+      <p class="edition">Kinetic study <span>·</span> 2026</p>
+    </header>
+
+    <main id="portrait" class="portrait">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="overline">Always in motion</p>
+          <h1 id="hero-title">
+            <span class="reveal"><span>Earth, held</span></span>
+            <span class="reveal"><span>in glass.</span></span>
+          </h1>
+          <p class="lede">A quiet study of the planet as an object—self-contained, continuously turning, and lit by the room around it.</p>
+        </div>
+
+        <div class="planet-caption">
+          <span class="caption-rule"></span>
+          <div>
+            <p>Planet 03 / Study 01</p>
+            <span>Inner sphere rotating</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="interaction-bar">
+      <p class="instruction"><span class="mouse-icon" aria-hidden="true"></span>Drag the globe to turn it</p>
+      <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false">
+        <span class="motion-indicator" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="motion-label">Pause rotation</span>
+      </button>
+      <p class="telemetry" id="telemetry" aria-label="Current globe rotation">023.4° E</p>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
