@@ -4,8 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "check:copy": "node scripts/check-user-copy.mjs",
+    "dev": "npm run check:copy && vite",
+    "build": "npm run check:copy && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
